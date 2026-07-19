@@ -425,14 +425,15 @@ margin-top:12px;
     }
 
 
-    .popup-box{
-        width:92%;
-        max-height:90vh;
-        overflow-y:auto;
-        padding:25px;
-        border-radius:18px;
-    }
-
+   .popup-box{
+    width:90%;
+    max-width:400px;
+    max-height:85vh;
+    overflow-y:auto;
+    padding:25px;
+    border-radius:18px;
+    margin:auto;
+}
 
     .popup-box h2{
         font-size:22px;
@@ -440,13 +441,18 @@ margin-top:12px;
 
 
     .popup-buttons{
-        flex-direction:column;
-    }
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-top:15px;
+}
 
-
-    .popup-buttons button{
-        width:100% !important;
-    }
+.popup-buttons button{
+    width:auto !important;
+    flex:1;
+    padding:10px 5px;
+    font-size:14px;
+}
 
 
     #viewTitle{
