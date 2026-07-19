@@ -368,3 +368,101 @@ border-radius:10px;
 margin-top:12px;
 
 }
+/* =========================
+   모바일 화면 최적화
+========================= */
+
+@media(max-width:600px){
+
+    .container{
+        width:95%;
+        margin:15px auto;
+    }
+
+    h1{
+        font-size:26px;
+        margin-bottom:15px;
+    }
+
+
+    .top-bar button{
+        font-size:14px;
+        padding:8px 12px;
+    }
+
+
+    .weekdays,
+    #calendar{
+        gap:5px;
+    }
+
+
+    .day{
+        min-height:70px;
+        padding:6px;
+        border-radius:10px;
+    }
+
+
+    .day strong{
+        font-size:14px;
+    }
+
+
+    .event-name{
+        font-size:9px;
+        padding:3px 5px;
+        margin-top:5px;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+    }
+
+
+    #addScheduleBtn{
+        font-size:15px;
+        padding:12px;
+    }
+
+
+    .popup-box{
+        width:92%;
+        max-height:90vh;
+        overflow-y:auto;
+        padding:25px;
+        border-radius:18px;
+    }
+
+
+    .popup-box h2{
+        font-size:22px;
+    }
+
+
+    .popup-buttons{
+        flex-direction:column;
+    }
+
+
+    .popup-buttons button{
+        width:100% !important;
+    }
+
+
+    #viewTitle{
+        font-size:22px;
+    }
+
+
+    #viewDate,
+    #viewPlace,
+    #viewType{
+        font-size:14px;
+    }
+
+
+    #viewContent{
+        font-size:14px;
+    }
+
+}
