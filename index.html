@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>학교 일정</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>📅 손촌중 일정</h1>
+
+<div class="top-bar">
+
+<button id="prevMonth">◀</button>
+
+<h2 id="monthTitle"></h2>
+
+<button id="nextMonth">▶</button>
+
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="일정 검색">
+
+<button id="searchBtn">검색</button>
+
+</div>
+
+<div class="weekdays">
+
+<div>일</div>
+<div>월</div>
+<div>화</div>
+<div>수</div>
+<div>목</div>
+<div>금</div>
+<div>토</div>
+
+</div>
+
+<div id="calendar"></div>
+
+<button id="addScheduleBtn">
+
+➕ 일정 등록
+
+</button>
+
+</div>
+
+<!-- 학생회 인증 -->
+
+<div class="popup" id="passwordPopup">
+
+<div class="popup-box">
+
+<h2>학생회 인증</h2>
+
+<input
+type="password"
+id="passwordInput"
+placeholder="비밀번호">
+
+<button id="checkPassword">
+
+확인
+
+</button>
+
+<button id="closePassword">
+
+닫기
+
+</button>
+
+</div>
+
+</div>
+
+<!-- 일정 등록 -->
+
+<div class="popup" id="schedulePopup">
+
+<div class="popup-box">
+
+<h2>일정 등록</h2>
+
+<label>제목</label>
+
+<input
+type="text"
+id="titleInput">
+
+<label>종류</label>
+
+<select id="typeInput">
+
+<option>시험</option>
+<option>행사</option>
+<option>방송</option>
+<option>체험학습</option>
+<option>공휴일</option>
+<option>방학</option>
+<option>기타</option>
+
+</select>
+
+<label>시작 날짜</label>
+
+<input
+type="date"
+id="startDateInput">
+
+<label>종료 날짜</label>
+
+<input
+type="date"
+id="endDateInput">
+
+<label>장소</label>
+
+<input
+type="text"
+id="placeInput">
+
+<label>내용</label>
+
+<textarea id="contentInput"></textarea>
+
+<label>사진</label>
+
+<input
+type="file"
+id="imageInput">
+
+<button id="saveSchedule">
+
+등록
+
+</button>
+
+<button id="closeSchedule">
+
+닫기
+
+</button>
+
+</div>
+
+</div>
+
+<!-- 일정 보기 -->
+
+<div class="popup" id="viewPopup">
+
+<div class="popup-box">
+
+<h2 id="viewTitle"></h2>
+
+<p id="viewDate"></p>
+
+<p id="viewPlace"></p>
+
+<h2 id="viewTitle"></h2>
+
+<div class="info-box">
+
+<p id="viewDate"></p>
+
+<p id="viewPlace"></p>
+
+<p id="viewType"></p>
+
+</div>
+
+<img id="viewImage">
+
+<p id="viewContent"></p>
+
+<div class="popup-buttons">
+
+<div class="button-row">
+    <button id="editBtn">수정</button>
+    <button id="deleteBtn">삭제</button>
+</div>
+
+<button id="closeView">닫기</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
